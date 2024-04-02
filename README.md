@@ -40,7 +40,7 @@ N_neighbor = 60
 #exploration-exploitation balance
 Cp = 0.02
 
-# samples 
+# samples of acquisition function
 num_samples=20000
 
 
@@ -48,7 +48,6 @@ num_samples=20000
 from VGT import VGT
 
 agent = VGT(f,lb,ub,n_init,max_iter,N_neighbor=N_neighbor,Cp= Cp,num_samples = num_samples)
-
 agent.search()
 
 
