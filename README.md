@@ -48,6 +48,7 @@ num_samples=20000
 from VGT import VGT
 
 agent = VGT(f,lb,ub,n_init,max_iter,N_neighbor=N_neighbor,Cp= Cp,num_samples = num_samples)
+
 agent.search()
 
 
